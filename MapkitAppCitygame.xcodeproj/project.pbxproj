@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2729EF6516A7548700DD4586 /* WebserviceConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2729EF6416A7548700DD4586 /* WebserviceConnection.m */; };
 		2730F12516A44F1F00304C03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730F12416A44F1F00304C03 /* UIKit.framework */; };
 		2730F12716A44F1F00304C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730F12616A44F1F00304C03 /* Foundation.framework */; };
 		2730F12916A44F1F00304C03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730F12816A44F1F00304C03 /* CoreGraphics.framework */; };
@@ -19,9 +20,17 @@
 		2730F13E16A44F1F00304C03 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2730F13C16A44F1F00304C03 /* MainStoryboard_iPhone.storyboard */; };
 		2730F14116A44F1F00304C03 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2730F13F16A44F1F00304C03 /* MainStoryboard_iPad.storyboard */; };
 		2730F14416A44F2000304C03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2730F14316A44F2000304C03 /* ViewController.m */; };
+		2730F15316A4512900304C03 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730F15216A4512900304C03 /* CoreLocation.framework */; };
+		2730F15616A4512E00304C03 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2730F15516A4512E00304C03 /* MapKit.framework */; };
+		2730F15E16A4561500304C03 /* JagerAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2730F15D16A4561500304C03 /* JagerAnnotation.m */; };
+		27F5C0B716A5A6E1000067F7 /* Elmer-Fudd-Hunting-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F5C0B616A5A6E1000067F7 /* Elmer-Fudd-Hunting-icon.png */; };
+		27F5C0BA16A5A8E7000067F7 /* ProoiAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F5C0B916A5A8E7000067F7 /* ProoiAnnotation.m */; };
+		27F5C0BD16A5AE58000067F7 /* Prooi.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F5C0BC16A5AE58000067F7 /* Prooi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2729EF6316A7548700DD4586 /* WebserviceConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceConnection.h; sourceTree = "<group>"; };
+		2729EF6416A7548700DD4586 /* WebserviceConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebserviceConnection.m; sourceTree = "<group>"; };
 		2730F12016A44F1F00304C03 /* MapkitAppCitygame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapkitAppCitygame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2730F12416A44F1F00304C03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2730F12616A44F1F00304C03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +48,14 @@
 		2730F14016A44F1F00304C03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		2730F14216A44F1F00304C03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2730F14316A44F2000304C03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2730F15216A4512900304C03 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2730F15516A4512E00304C03 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2730F15C16A4561500304C03 /* JagerAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JagerAnnotation.h; sourceTree = "<group>"; };
+		2730F15D16A4561500304C03 /* JagerAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JagerAnnotation.m; sourceTree = "<group>"; };
+		27F5C0B616A5A6E1000067F7 /* Elmer-Fudd-Hunting-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Elmer-Fudd-Hunting-icon.png"; sourceTree = "<group>"; };
+		27F5C0B816A5A8E7000067F7 /* ProoiAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProoiAnnotation.h; sourceTree = "<group>"; };
+		27F5C0B916A5A8E7000067F7 /* ProoiAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProoiAnnotation.m; sourceTree = "<group>"; };
+		27F5C0BC16A5AE58000067F7 /* Prooi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prooi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2730F15616A4512E00304C03 /* MapKit.framework in Frameworks */,
+				2730F15316A4512900304C03 /* CoreLocation.framework in Frameworks */,
 				2730F12516A44F1F00304C03 /* UIKit.framework in Frameworks */,
 				2730F12716A44F1F00304C03 /* Foundation.framework in Frameworks */,
 				2730F12916A44F1F00304C03 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +77,8 @@
 		2730F11516A44F1F00304C03 = {
 			isa = PBXGroup;
 			children = (
+				2730F15516A4512E00304C03 /* MapKit.framework */,
+				2730F15216A4512900304C03 /* CoreLocation.framework */,
 				2730F12A16A44F1F00304C03 /* MapkitAppCitygame */,
 				2730F12316A44F1F00304C03 /* Frameworks */,
 				2730F12116A44F1F00304C03 /* Products */,
@@ -85,12 +106,15 @@
 		2730F12A16A44F1F00304C03 /* MapkitAppCitygame */ = {
 			isa = PBXGroup;
 			children = (
+				2730F15B16A455DB00304C03 /* Annotations */,
 				2730F13316A44F1F00304C03 /* AppDelegate.h */,
 				2730F13416A44F1F00304C03 /* AppDelegate.m */,
 				2730F13C16A44F1F00304C03 /* MainStoryboard_iPhone.storyboard */,
 				2730F13F16A44F1F00304C03 /* MainStoryboard_iPad.storyboard */,
 				2730F14216A44F1F00304C03 /* ViewController.h */,
 				2730F14316A44F2000304C03 /* ViewController.m */,
+				2729EF6316A7548700DD4586 /* WebserviceConnection.h */,
+				2729EF6416A7548700DD4586 /* WebserviceConnection.m */,
 				2730F12B16A44F1F00304C03 /* Supporting Files */,
 			);
 			path = MapkitAppCitygame;
@@ -99,6 +123,8 @@
 		2730F12B16A44F1F00304C03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27F5C0BC16A5AE58000067F7 /* Prooi.png */,
+				27F5C0B616A5A6E1000067F7 /* Elmer-Fudd-Hunting-icon.png */,
 				2730F12C16A44F1F00304C03 /* MapkitAppCitygame-Info.plist */,
 				2730F12D16A44F1F00304C03 /* InfoPlist.strings */,
 				2730F13016A44F1F00304C03 /* main.m */,
@@ -108,6 +134,17 @@
 				2730F13A16A44F1F00304C03 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2730F15B16A455DB00304C03 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				2730F15C16A4561500304C03 /* JagerAnnotation.h */,
+				2730F15D16A4561500304C03 /* JagerAnnotation.m */,
+				27F5C0B816A5A8E7000067F7 /* ProoiAnnotation.h */,
+				27F5C0B916A5A8E7000067F7 /* ProoiAnnotation.m */,
+			);
+			name = Annotations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +204,8 @@
 				2730F13B16A44F1F00304C03 /* Default-568h@2x.png in Resources */,
 				2730F13E16A44F1F00304C03 /* MainStoryboard_iPhone.storyboard in Resources */,
 				2730F14116A44F1F00304C03 /* MainStoryboard_iPad.storyboard in Resources */,
+				27F5C0B716A5A6E1000067F7 /* Elmer-Fudd-Hunting-icon.png in Resources */,
+				27F5C0BD16A5AE58000067F7 /* Prooi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +219,9 @@
 				2730F13116A44F1F00304C03 /* main.m in Sources */,
 				2730F13516A44F1F00304C03 /* AppDelegate.m in Sources */,
 				2730F14416A44F2000304C03 /* ViewController.m in Sources */,
+				2730F15E16A4561500304C03 /* JagerAnnotation.m in Sources */,
+				27F5C0BA16A5A8E7000067F7 /* ProoiAnnotation.m in Sources */,
+				2729EF6516A7548700DD4586 /* WebserviceConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +348,7 @@
 				2730F14916A44F2000304C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

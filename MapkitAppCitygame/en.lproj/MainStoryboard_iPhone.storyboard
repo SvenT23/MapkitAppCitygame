@@ -1,23 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7X-Nz-fTX"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u57-K8-WKN">
+                                <items>
+                                    <barButtonItem systemItem="search" id="gSI-qY-n6f">
+                                        <connections>
+                                            <action selector="refresh:" destination="2" id="gdA-a0-e93"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="trash" id="4Tw-PP-3oD">
+                                        <connections>
+                                            <action selector="clearMap:" destination="2" id="ngN-KK-00I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N7X-Nz-fTX" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="8Pv-yk-nEt"/>
+                            <constraint firstItem="u57-K8-WKN" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Ggk-I2-CTe"/>
+                            <constraint firstItem="N7X-Nz-fTX" firstAttribute="top" secondItem="u57-K8-WKN" secondAttribute="bottom" type="default" id="J8o-46-b5V"/>
+                            <constraint firstItem="N7X-Nz-fTX" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="hNc-Xv-5Jb"/>
+                            <constraint firstItem="u57-K8-WKN" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="liu-Ti-XLL"/>
+                            <constraint firstItem="N7X-Nz-fTX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="qga-5T-jLU"/>
+                            <constraint firstItem="u57-K8-WKN" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="qwh-AV-U3W"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L1m-tw-GaF"/>
+                    <connections>
+                        <outlet property="mapView" destination="N7X-Nz-fTX" id="0EK-mw-8Qi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="604" y="-20"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clearMap:"/>
+                <relationship kind="action" name="refresh:"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
